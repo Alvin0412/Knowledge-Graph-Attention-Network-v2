@@ -1,0 +1,284 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 16 files
+Detected 30 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: Model/CKE.py
+--------------------------------------------------------------------------------
+Model/CKE.py:101:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CKE.py:102:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CKE.py:103:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CKE.py:106:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CKE.py:109:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CKE.py:125:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CKE.py:126:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CKE.py:127:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CKE.py:129:32: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CKE.py:130:32: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+--------------------------------------------------------------------------------
+File: Model/BPRMF.py
+--------------------------------------------------------------------------------
+Model/BPRMF.py:37:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/BPRMF.py:38:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/BPRMF.py:39:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+--------------------------------------------------------------------------------
+File: Model/KGAT.py
+--------------------------------------------------------------------------------
+Model/KGAT.py:173:19: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:174:23: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:175:23: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:189:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:190:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:191:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:194:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:197:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:391:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:392:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:395:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/KGAT.py:398:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+--------------------------------------------------------------------------------
+File: Model/Main.py
+--------------------------------------------------------------------------------
+Model/Main.py:341:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: Model/CFKG.py
+--------------------------------------------------------------------------------
+Model/CFKG.py:103:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CFKG.py:104:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CFKG.py:105:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+Model/CFKG.py:108:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+================================================================================
+Detailed log follows:
+
+================================================================================
+================================================================================
+Input tree: 'Model/'
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'Model/CKE.py'
+ outputting to 'Model_v2/CKE.py'
+--------------------------------------------------------------------------------
+
+43:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+44:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+45:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+48:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+49:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+50:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+51:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+56:22: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+97:19: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+101:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+102:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+103:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+106:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+109:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+125:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+126:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+127:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+129:32: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+130:32: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+142:15: INFO: Renamed 'tf.log' to 'tf.math.log'
+157:15: INFO: Renamed 'tf.log' to 'tf.math.log'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/BPRMF.py'
+ outputting to 'Model_v2/BPRMF.py'
+--------------------------------------------------------------------------------
+
+29:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+30:25: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+31:25: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+37:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+38:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+39:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+50:19: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+58:22: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+79:15: INFO: Renamed 'tf.log' to 'tf.math.log'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/NFM.py'
+ outputting to 'Model_v2/NFM.py'
+--------------------------------------------------------------------------------
+
+54:27: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+55:26: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+56:25: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+58:27: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+59:26: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+60:25: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+62:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+71:22: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+116:15: INFO: Renamed 'tf.log' to 'tf.math.log'
+132:19: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+136:16: INFO: Renamed 'tf.sparse_tensor_dense_matmul' to 'tf.sparse.sparse_dense_matmul'
+140:18: INFO: Renamed 'tf.sparse_tensor_dense_matmul' to 'tf.sparse.sparse_dense_matmul'
+145:21: INFO: Renamed 'tf.sparse_tensor_dense_matmul' to 'tf.sparse.sparse_dense_matmul'
+155:19: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/KGAT.py'
+ outputting to 'Model_v2/KGAT.py'
+--------------------------------------------------------------------------------
+
+98:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+99:25: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+100:25: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+103:24: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+105:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+106:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+107:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+108:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+112:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+113:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+118:22: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+173:19: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+174:23: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+175:23: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+189:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+190:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+191:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+194:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+197:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+230:19: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+255:20: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+269:34: INFO: Renamed 'tf.sparse_tensor_dense_matmul' to 'tf.sparse.sparse_dense_matmul'
+289:29: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+313:34: INFO: Renamed 'tf.sparse_tensor_dense_matmul' to 'tf.sparse.sparse_dense_matmul'
+318:25: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+342:34: INFO: Renamed 'tf.sparse_tensor_dense_matmul' to 'tf.sparse.sparse_dense_matmul'
+350:29: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+391:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+392:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+395:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+398:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/Main.py'
+ outputting to 'Model_v2/Main.py'
+--------------------------------------------------------------------------------
+
+39:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+96:12: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+114:21: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+116:13: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+118:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+138:21: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+187:21: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+191:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+341:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/CFKG.py'
+ outputting to 'Model_v2/CFKG.py'
+--------------------------------------------------------------------------------
+
+57:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+58:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+59:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+60:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+63:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+64:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+69:22: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+103:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+104:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+105:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+108:14: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+142:19: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/utility/metrics.py'
+ outputting to 'Model_v2/utility/metrics.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/utility/loader_kgat.py'
+ outputting to 'Model_v2/utility/loader_kgat.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/utility/loader_cke.py'
+ outputting to 'Model_v2/utility/loader_cke.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/utility/loader_cfkg.py'
+ outputting to 'Model_v2/utility/loader_cfkg.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/utility/loader_nfm.py'
+ outputting to 'Model_v2/utility/loader_nfm.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/utility/parser.py'
+ outputting to 'Model_v2/utility/parser.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/utility/helper.py'
+ outputting to 'Model_v2/utility/helper.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/utility/load_data.py'
+ outputting to 'Model_v2/utility/load_data.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/utility/loader_bprmf.py'
+ outputting to 'Model_v2/utility/loader_bprmf.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'Model/utility/batch_test.py'
+ outputting to 'Model_v2/utility/batch_test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
